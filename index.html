@@ -1,10 +1,193 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="UTF-8"
+	<title>Raymond Tan</title>
+	<style>
+		*{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		html,body{
+			margin: 0px;
+			padding: 0px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+            color: cyan;
+        }
+
+        .top-bar {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            flex-direction: row;
+            background-color: purple;
+        }
+
+        .bar-item {
+            width: 100%;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .profile {
+            padding-top: 50px;
+            color: black;
+            height: 500px;
+            background-color: white;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: blue;
+            width: 150px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .projects {
+            background-color: lightgray;
+            color: black;
+            height: 500px;
+        }
+
+        .project-container {
+            display: inline;
+        }
+
+        .project {
+            width: 50%;
+            float: left;
+        }
+
+        .contact {
+            background-color: white;
+            color: black;
+            height: 200px;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .social {
+            width: 100px;
+            height: 100px;
+            border: 1px black dotted;
+            margin: 10px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 100px;
+        }
+
+        #twitter {
+            background-color: lightblue;
+        }
+
+        #face {
+            background-color: blue;
+        }
+
+        #insta {
+            background-color: red;
+        }
+        a#twitter:hover {
+            color: black;
+        }
+
+        a#face:hover {
+            color: black;
+        }
+
+        a#insta:hover {
+            color: black;
+        }
+
+        .footer{
+            background-color: purple;
+            color: white;
+        }
+	</style>
+</head>
+
 <body>
-	<div><h style="font-size: 48px"><center>Raymond Tan</center></h></div>
-	<div>
-		<center><img src=https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-0/c0.88.552.552a/p552x414/18623368_318401461925074_8265513220157883196_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_oc=AQlQyN8Ktbuws76y-zZEP5LEIbiu8zLrp8nbsLJCXJ463MiWrQwR_HVp0ad2urzTR1Q&_nc_ht=scontent.fbed1-2.fna&oh=2d9681bf53019c5366cf3a88dcd41bbc&oe=5E9967C2></img></center>
-	</div>
-	<div> <p><center>Some stuff about me</center></p> </div>
+	<div class="top-bar">
+        <div class="bar-item">
+            <a href="#prof">Name</a>
+        </div>
+        <div class="bar-item">
+            <a href="#abou">About</a>
+        </div>
+        <div class="bar-item">
+            <a href="#proj">Projects</a>
+        </div>
+        <div class="bar-item">
+            <a href="#cont">More</a>
+        </div>
+    </div>
+    <div class="profile" id="prof">
+        <center>
+            <h2>Raymond Tan</h2>
+            <div class="profile-picture">
+                <img height=256 width=256 src="https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-0/c0.88.552.552a/p552x414/18623368_318401461925074_8265513220157883196_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_oc=AQlQyN8Ktbuws76y-zZEP5LEIbiu8zLrp8nbsLJCXJ463MiWrQwR_HVp0ad2urzTR1Q&_nc_ht=scontent.fbed1-2.fna&oh=2d9681bf53019c5366cf3a88dcd41bbc&oe=5E9967C2" alt="./me.jpg/"/>
+            </div>
+            <p id="abou">
+				Some information about me!<br>
+				I am a student!
+            </p>
+            <a class="button" href="#">Scrolly Button</a>
+        </center>
+    </div>
+    <div class="projects" id="proj">
+        <center>
+            <h2>
+                Project List
+            </h2>
+            <div class="project-container">
+                <div class="project">
+                    <h3>
+                        Project 1
+                    </h3>
+                    <p>
+                        Lorem ipsum
+                    </p>
+                </div>
+                <div class="project">
+                    <h3>
+                        Project 2
+                    </h3>
+                    <p>
+                        Lorem ipsum
+                    </p>
+                </div>
+            </div>
+        </center>
+    </div>
+    <div class="contact" id="cont">
+        <center>
+            <h2>
+                Contact!
+            </h2>
+        </center>
+        <div class="socials">
+            <a class="social" id="twitter" href="https://twitter.com"> T </a>
+            <a class="social" id="face" href="https://facebook.com"> F </a>
+            <a class="social" id="insta" href="https://instagram.com"> I </a>
+        </div>
+    </div>
+    <div class="footer">
+        <center>
+            Copyright &copy; Raymond Tan
+        </center>
+    </div>
 </body>
 </html>
